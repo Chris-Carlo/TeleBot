@@ -41,12 +41,12 @@ async def cmd_list(event):
                 for i in CMD_LIST[input_str]:
                     string += "    " + i
                     string += "\n"
-                string +="\n**© @TeleBotSupport**"
+                string +="\n**© @TGXTECHGROUP**"
                 await event.edit(string)
             else:
                 await event.edit(input_str + " is not a valid plugin!")
         else:
-            help_string = f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[TeleBot](https://xditya.gitbook.io/telebot/)**\n\n"""
+            help_string = f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**EDITH**\n\n"""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername,
                 help_string
