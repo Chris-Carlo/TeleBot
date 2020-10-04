@@ -2,7 +2,7 @@
 # Kangers, don't remove this line 
 # @its_xditya
 
-#Usage .actressdp Im Not Responsible For Any Ban caused By This
+#Usage .actordp Im Not Responsible For Any Ban caused By This
 
 import requests , re , random 
 import urllib , os 
@@ -12,15 +12,15 @@ import asyncio
 
 COLLECTION_STRING = [
 
-  "indian-actress-wallpapers",
+  "indian-actors-wallpapers",
 
-  "latest-bollywood-actress-wallpapers-2018-hd",
+  "latest-bollywood-actors-wallpapers-2018-hd",
 
-  "bollywood-actress-wallpaper",
+  "bollywood-actors-wallpaper",
 
-  "hd-wallpapers-of-bollywood-actress",
+  "hd-wallpapers-of-bollywood-actor",
 
-  "new-bollywood-actress-wallpaper-2018"
+  "new-bollywood-actors-wallpaper-2018"
 
 ]
 
@@ -48,11 +48,11 @@ async def animepp():
 
     urllib.request.urlretrieve(fy,"donottouch.jpg")
 
-@borg.on(admin_cmd(pattern="actressdp ?(.*)"))
+@borg.on(admin_cmd(pattern="actorsdp ?(.*)"))
 
 async def main(event):
 
-    await event.edit("**Starting Actress Profile Pic...\n\nDone !!! Check Your DP in 5 seconds. \n By [EDITH](https://github.com/Chris-Carlo/EDITH)**")
+    await event.edit("**Starting Actor Profile Pic...\n\nDone !!! Check Your DP in 5 seconds. \n By [EDITH](https://github.com/Chris-Carlo)**")
 
     while True:
 
