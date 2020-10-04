@@ -19,7 +19,7 @@ async def _(event):
     while True:
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M:%S")
-        bio = f"📅 {DMY} | This is my bio, I guess.. 😁 | ⌚️ {HM}"
+        bio = f"Day Dreamer, Night Thinker"
         logger.info(bio)
         try:
             await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
