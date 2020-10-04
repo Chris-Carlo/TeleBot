@@ -14,7 +14,7 @@ from userbot.plugins import telestats
 from userbot import ALIVE_NAME
 from userbot import bot
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TeleBot User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "EDITH User"
 myid = bot.uid
 
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -27,7 +27,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "© TeleBot Help",
+                "© EDITH Help",
                 text="{}\nCurrently Loaded Plugins: {}".format(
                     query, len(CMD_LIST)),
                 buttons=buttons,
@@ -36,12 +36,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**TeleBot Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @TeleBotSupport",
+                text=f"**EDITH Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, Master!__\n\n(c) ©️ @TGXTECHSUPPORT",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
-                    [Button.url("Repo", "https://github.com/xditya/TeleBot")],
-                    [Button.url("Deploy Now!",
-                                "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot")],
+                    [Button.url("SUPPORT", "https://github.com")],
+                    [Button.url("CHANNEL",
+                                "https://dashboard.heroku.com/new?button-url=")],
                 ]
             )
         else:
@@ -49,11 +49,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 "Source Code",
                 text="**Welcome to TeleBot**\n\n`Click below buttons for more`",
                 buttons=[
-                    [custom.Button.url("Creator👨‍🦱", "https://t.me/its_xditya")],
-                    [custom.Button.url("👨‍💻Source Code‍💻", "https://github.com/xditya/TeleBot"), custom.Button.url(
-                        "Deploy 🌀",
-                        "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot")],
-                    [custom.Button.url("Updates and Support Group↗️", "https://t.me/TeleBotSupport")]
+                    [custom.Button.url("Creator👨‍🦱", "https://t.me/Chris_Carlo")],
+                    [custom.Button.url("👨‍💻Source Code‍💻", "https://t.me/nokkiirunnoipokittum"), custom.Button.url(
+                        "SUPPORT",
+                        "https://t.me/TGXTECHGROUP")
+                    [custom.Button.url("UPDATES ↗️", "https://t.me/TGXTECH")]
                 ],
                 link_preview=False
             )
@@ -128,7 +128,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-                © Telebot".format(
+                © EDITH".format(
                 plugin_name
             )
             try:
