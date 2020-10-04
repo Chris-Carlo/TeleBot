@@ -21,7 +21,7 @@ async def _(event):
     await event.edit("Thanks")
     animation_chars = [
             "**EDITH**",
-            "[More Info](https://github.com)"
+            "[EDITH](https://t.me/MasterChris_Bot)"
          ]
             
 
