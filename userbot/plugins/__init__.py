@@ -32,17 +32,17 @@ if Var.PMSECURITY.lower() == "off":
 else:
  pm = "Enabled"
  
-TELEUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TeleBotSupport"
+TELEUSER = str(ALIVE_NAME) if ALIVE_NAME else "@TGXTECHGROUP"
 
-tele =f"TeleBot Version: {telever}\n"
+tele =f"EDITH Version: {telever}\n"
 tele +=f"Log Group: {log}\n"
 tele +=f"Assistant Bot: {bots}\n"
 tele +=f"Lydia: {lyd}\n"
 tele +=f"Sudo: {sudo}\n"
 tele +=f"PMSecurity: {pm}\n"
-tele +=f"\nVisit @TeleBotSupport for assistance.\n"
+tele +=f"\nVisit @TGXTECHGROUP for assistance.\n"
 telestats = (f"{tele}")
 
 """
-Usage - .stats - To see the variable stats of TeleBot {inline}
+Usage - .stats - To see the variable stats of EDITH {inline}
 """
